@@ -19,6 +19,7 @@ export class AppComponent {
  
   initializeApp() {
     this.platform.ready().then(() => {
+      this.codePush.notifyApplicationReady();
       this.checkCodePush()
       console.log("init")
     });
